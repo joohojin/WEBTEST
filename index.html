@@ -4,6 +4,30 @@
     <title>시를 쓰자요</title>
     <meta name="viewport" content="user-scalable=no,initialscale=1,maximum-scale=1">
     <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        body {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+        #menu {
+        width: 260px;
+        float: left;
+        }
+        #section {
+        width: 700px;
+        float: right; /* left로 입력해도 상관없습니다. */
+        }
+        li { list-style: none; }
+        @media screen and (max-width: 767px) {
+        /* 스마트폰 사이즈에서는 전부 해제합니다. */
+        body { width: auto }
+        #menu { width: auto; float: none;
+        #section { width: auto; float: none; }
+        }
     @font-face {
     font-family: 'Danjo-bold-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
@@ -13,7 +37,6 @@
     <style>
 </head>
 <body>
-    <div id="section">
     <h1>세월이 가면</h1>
     <p>― 박인환 -</p>
     <p> 지금 그 사람 이름은 잊었지만 </p>
